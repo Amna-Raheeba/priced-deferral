@@ -1,0 +1,7 @@
+key,profile,n,priced_cost,always_cost,threshold_cost,oracle_cost,priced_saving_vs_always,priced_saving_vs_threshold,priced_regret_vs_oracle,verdict_agreement,packet_sufficient,mean_packet_items,mean_packet_compression
+clinic/cases.json,clinic,60,303536.30,1400000.00,900420.00,980.00,0.7832,0.6629,308.7309,0.3500,0.6327,3.49,0.6397
+clinic/hand_cases.json,clinic,12,100961.00,600000.00,300350.00,100420.00,0.8317,0.6639,0.0054,0.8333,0.7500,4.00,0.9750
+ops/cases.json,ops,60,436.20,700.00,492.00,98.00,0.3769,0.1134,3.4510,0.7667,0.8125,3.50,0.6679
+ops/hand_cases.json,ops,12,93.50,300.00,185.00,92.00,0.6883,0.4946,0.0163,1.0000,0.6667,4.00,0.9667
+research/cases.json,research,60,2231.35,7000.00,4620.00,280.00,0.6812,0.5170,6.9691,0.6500,0.6552,3.48,0.6338
+research/hand_cases.json,research,12,661.00,3000.00,1600.00,620.00,0.7797,0.5869,0.0661,0.8333,0.7500,4.00,0.9750
