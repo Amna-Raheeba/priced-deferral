@@ -1,0 +1,430 @@
+[
+  {
+    "case_id": "hand-01",
+    "domain": "clinic",
+    "question": "Is the diagnosis confirmed by the gold-standard test?",
+    "candidate": "Yes \u2014 confirmed",
+    "p_correct": 1.0,
+    "evidence": [],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [],
+    "conflicts": [],
+    "missing": [],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "hand-02",
+    "domain": "clinic",
+    "question": "Is this chest pain cardiac in origin?",
+    "candidate": "Yes \u2014 cardiac",
+    "p_correct": 0.99,
+    "evidence": [],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 non-cardiac",
+        "support": 0
+      }
+    ],
+    "conflicts": [],
+    "missing": [],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "hand-03",
+    "domain": "clinic",
+    "question": "Does this patient need urgent referral?",
+    "candidate": "Yes \u2014 urgent referral",
+    "p_correct": 0.55,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "Decisive check result.",
+        "decisiveness": 0.5,
+        "cost": 8.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 observe",
+        "support": 1
+      }
+    ],
+    "conflicts": [
+      "White cell count normal."
+    ],
+    "missing": [
+      "Blood culture result."
+    ],
+    "correct": false,
+    "true_label": "No \u2014 observe",
+    "human_correct": true
+  },
+  {
+    "case_id": "hand-04",
+    "domain": "research",
+    "question": "Does this paper claim SOTA on ImageNet?",
+    "candidate": "Yes \u2014 SOTA on ImageNet",
+    "p_correct": 0.8,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "Decisive check result.",
+        "decisiveness": 0.9,
+        "cost": 1.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 SOTA on CIFAR only",
+        "support": 0
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The results table."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "hand-05",
+    "domain": "ops",
+    "question": "Is the 09:00 flight the cheapest option?",
+    "candidate": "Yes \u2014 cheapest",
+    "p_correct": 0.6,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "Decisive check result.",
+        "decisiveness": 0.8,
+        "cost": 0.5,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 14:00 is cheaper",
+        "support": 0
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The fare table."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "hand-06",
+    "domain": "ops",
+    "question": "Does the hotel offer free cancellation?",
+    "candidate": "Yes \u2014 free cancellation",
+    "p_correct": 0.97,
+    "evidence": [],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [],
+    "conflicts": [],
+    "missing": [],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "hand-07",
+    "domain": "clinic",
+    "question": "Should this patient start anticoagulation today?",
+    "candidate": "Yes \u2014 start today",
+    "p_correct": 0.72,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "Decisive check result.",
+        "decisiveness": 0.2,
+        "cost": 10.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 wait for labs",
+        "support": 2
+      }
+    ],
+    "conflicts": [
+      "Platelets low at 90.",
+      "Recent bleeding episode noted."
+    ],
+    "missing": [
+      "INR result."
+    ],
+    "correct": false,
+    "true_label": "No \u2014 wait for labs",
+    "human_correct": true
+  },
+  {
+    "case_id": "hand-08",
+    "domain": "research",
+    "question": "Is the proposed method a variant of LoRA?",
+    "candidate": "Yes \u2014 LoRA variant",
+    "p_correct": 0.58,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "Decisive check result.",
+        "decisiveness": 0.1,
+        "cost": 4.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 full fine-tuning",
+        "support": 2
+      }
+    ],
+    "conflicts": [
+      "Method updates all weights."
+    ],
+    "missing": [
+      "The methods section."
+    ],
+    "correct": false,
+    "true_label": "No \u2014 full fine-tuning",
+    "human_correct": true
+  },
+  {
+    "case_id": "hand-09",
+    "domain": "ops",
+    "question": "Is the downtown venue available on Saturday?",
+    "candidate": "Yes \u2014 available Saturday",
+    "p_correct": 0.55,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "Decisive check result.",
+        "decisiveness": 0.1,
+        "cost": 1.5,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 booked Saturday",
+        "support": 1
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The booking calendar."
+    ],
+    "correct": false,
+    "true_label": "No \u2014 booked Saturday",
+    "human_correct": true
+  },
+  {
+    "case_id": "hand-10",
+    "domain": "research",
+    "question": "Is the dataset publicly available?",
+    "candidate": "Yes \u2014 public",
+    "p_correct": 0.66,
+    "evidence": [],
+    "gathered": [],
+    "alternatives": [
+      {
+        "label": "No \u2014 on request only",
+        "support": 0
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The data-availability statement."
+    ],
+    "correct": false,
+    "true_label": "No \u2014 on request only",
+    "human_correct": true
+  },
+  {
+    "case_id": "hand-11",
+    "domain": "research",
+    "question": "Does the study use a randomized controlled trial?",
+    "candidate": "Yes \u2014 RCT",
+    "p_correct": 0.85,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "Full protocol review.",
+        "decisiveness": 0.9,
+        "cost": 400.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 observational",
+        "support": 0
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The protocol document."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "hand-12",
+    "domain": "clinic",
+    "question": "Does this rash indicate a drug allergy?",
+    "candidate": "Yes \u2014 drug allergy",
+    "p_correct": 0.5,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "Decisive check result.",
+        "decisiveness": 0.3,
+        "cost": 8.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 viral rash",
+        "support": 1
+      }
+    ],
+    "conflicts": [
+      "No prior exposure to the drug."
+    ],
+    "missing": [
+      "Allergy history."
+    ],
+    "correct": false,
+    "true_label": "No \u2014 viral rash",
+    "human_correct": false
+  }
+]

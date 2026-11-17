@@ -1,0 +1,4116 @@
+[
+  {
+    "case_id": "clinic-01",
+    "domain": "clinic",
+    "question": "Does this patient need urgent referral for suspected sepsis?",
+    "candidate": "Yes \u2014 urgent referral",
+    "p_correct": 0.73,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "clinic evidence 1: supports the candidate.",
+        "decisiveness": 0.13,
+        "cost": 10.07,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "clinic evidence 2: supports the candidate.",
+        "decisiveness": 0.32,
+        "cost": 5.7,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "g2",
+        "text": "A held measurement argues against the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "No \u2014 observe",
+        "contradicts": true
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 observe",
+        "support": 1
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The key deciding measurement is not yet held."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "clinic-02",
+    "domain": "clinic",
+    "question": "Is this chest pain cardiac in origin?",
+    "candidate": "Yes \u2014 cardiac",
+    "p_correct": 0.62,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "clinic evidence 1: supports the candidate.",
+        "decisiveness": 0.17,
+        "cost": 9.19,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "clinic evidence 2: supports the candidate.",
+        "decisiveness": 0.39,
+        "cost": 10.6,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 non-cardiac",
+        "support": 0
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The key deciding measurement is not yet held."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "clinic-03",
+    "domain": "clinic",
+    "question": "Does this rash indicate a drug allergy?",
+    "candidate": "Yes \u2014 drug allergy",
+    "p_correct": 0.54,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "clinic evidence 1: supports an alternative.",
+        "decisiveness": 0.28,
+        "cost": 7.48,
+        "supports": "alt-1",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "clinic evidence 2: supports the candidate.",
+        "decisiveness": 0.49,
+        "cost": 5.82,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "clinic evidence 3: supports an alternative.",
+        "decisiveness": 0.54,
+        "cost": 12.29,
+        "supports": "alt-1",
+        "contradicts": false
+      },
+      {
+        "item_id": "e4",
+        "text": "clinic evidence 4: supports the candidate.",
+        "decisiveness": 0.59,
+        "cost": 6.18,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 viral rash",
+        "support": 2
+      },
+      {
+        "label": "alt-1",
+        "support": 0
+      }
+    ],
+    "conflicts": [
+      "One held fact contradicts the candidate."
+    ],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": false,
+    "true_label": "No \u2014 viral rash",
+    "human_correct": true
+  },
+  {
+    "case_id": "clinic-04",
+    "domain": "clinic",
+    "question": "Should this patient start anticoagulation today?",
+    "candidate": "Yes \u2014 start today",
+    "p_correct": 0.95,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "clinic evidence 1: supports the candidate.",
+        "decisiveness": 0.4,
+        "cost": 10.8,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "clinic evidence 2: supports the candidate.",
+        "decisiveness": 0.52,
+        "cost": 14.45,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "clinic evidence 3: supports the candidate.",
+        "decisiveness": 0.43,
+        "cost": 5.61,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e4",
+        "text": "clinic evidence 4: supports the candidate.",
+        "decisiveness": 0.42,
+        "cost": 14.93,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 wait for labs",
+        "support": 1
+      },
+      {
+        "label": "alt-1",
+        "support": 1
+      }
+    ],
+    "conflicts": [
+      "One held fact contradicts the candidate."
+    ],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "clinic-05",
+    "domain": "clinic",
+    "question": "Is this chest pain cardiac in origin?",
+    "candidate": "Yes \u2014 cardiac",
+    "p_correct": 0.74,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "clinic evidence 1: supports the candidate.",
+        "decisiveness": 0.54,
+        "cost": 5.81,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "clinic evidence 2: supports the candidate.",
+        "decisiveness": 0.37,
+        "cost": 13.83,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "clinic evidence 3: supports an alternative.",
+        "decisiveness": 0.45,
+        "cost": 14.86,
+        "supports": "alt-1",
+        "contradicts": false
+      },
+      {
+        "item_id": "e4",
+        "text": "clinic evidence 4: supports the candidate.",
+        "decisiveness": 0.29,
+        "cost": 7.31,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e5",
+        "text": "clinic evidence 5: supports the candidate.",
+        "decisiveness": 0.18,
+        "cost": 11.59,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 non-cardiac",
+        "support": 1
+      }
+    ],
+    "conflicts": [
+      "One held fact contradicts the candidate."
+    ],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "clinic-06",
+    "domain": "clinic",
+    "question": "Does this patient need urgent referral for suspected sepsis?",
+    "candidate": "Yes \u2014 urgent referral",
+    "p_correct": 0.93,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "clinic evidence 1: supports an alternative.",
+        "decisiveness": 0.3,
+        "cost": 8.94,
+        "supports": "alt-1",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "clinic evidence 2: supports the candidate.",
+        "decisiveness": 0.3,
+        "cost": 6.91,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "clinic evidence 3: supports an alternative.",
+        "decisiveness": 0.18,
+        "cost": 8.4,
+        "supports": "alt-1",
+        "contradicts": false
+      },
+      {
+        "item_id": "e4",
+        "text": "clinic evidence 4: supports the candidate.",
+        "decisiveness": 0.1,
+        "cost": 6.51,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e5",
+        "text": "clinic evidence 5: supports the candidate.",
+        "decisiveness": 0.28,
+        "cost": 5.26,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "g2",
+        "text": "A held measurement argues against the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "No \u2014 observe",
+        "contradicts": true
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 observe",
+        "support": 1
+      }
+    ],
+    "conflicts": [
+      "One held fact contradicts the candidate."
+    ],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "clinic-07",
+    "domain": "clinic",
+    "question": "Does this rash indicate a drug allergy?",
+    "candidate": "Yes \u2014 drug allergy",
+    "p_correct": 0.99,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "clinic evidence 1: supports the candidate.",
+        "decisiveness": 0.15,
+        "cost": 8.43,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "clinic evidence 2: supports the candidate.",
+        "decisiveness": 0.51,
+        "cost": 6.61,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "clinic evidence 3: supports the candidate.",
+        "decisiveness": 0.58,
+        "cost": 10.28,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e4",
+        "text": "clinic evidence 4: supports the candidate.",
+        "decisiveness": 0.37,
+        "cost": 5.27,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 viral rash",
+        "support": 0
+      },
+      {
+        "label": "alt-1",
+        "support": 1
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "clinic-08",
+    "domain": "clinic",
+    "question": "Is this chest pain cardiac in origin?",
+    "candidate": "Yes \u2014 cardiac",
+    "p_correct": 0.83,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "clinic evidence 1: supports an alternative.",
+        "decisiveness": 0.2,
+        "cost": 9.93,
+        "supports": "alt-0",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "clinic evidence 2: supports the candidate.",
+        "decisiveness": 0.59,
+        "cost": 12.9,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "clinic evidence 3: supports the candidate.",
+        "decisiveness": 0.2,
+        "cost": 11.05,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 non-cardiac",
+        "support": 1
+      },
+      {
+        "label": "alt-1",
+        "support": 1
+      }
+    ],
+    "conflicts": [
+      "One held fact contradicts the candidate.",
+      "A second held fact weakens the candidate."
+    ],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "clinic-09",
+    "domain": "clinic",
+    "question": "Does this patient need urgent referral for suspected sepsis?",
+    "candidate": "Yes \u2014 urgent referral",
+    "p_correct": 0.82,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "clinic evidence 1: supports an alternative.",
+        "decisiveness": 0.5,
+        "cost": 5.85,
+        "supports": "alt-1",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "clinic evidence 2: supports an alternative.",
+        "decisiveness": 0.49,
+        "cost": 12.5,
+        "supports": "alt-1",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "clinic evidence 3: supports an alternative.",
+        "decisiveness": 0.32,
+        "cost": 11.36,
+        "supports": "alt-0",
+        "contradicts": false
+      },
+      {
+        "item_id": "e4",
+        "text": "clinic evidence 4: supports the candidate.",
+        "decisiveness": 0.57,
+        "cost": 12.22,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e5",
+        "text": "clinic evidence 5: supports an alternative.",
+        "decisiveness": 0.46,
+        "cost": 6.7,
+        "supports": "alt-0",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "g2",
+        "text": "A held measurement argues against the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "No \u2014 observe",
+        "contradicts": true
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 observe",
+        "support": 2
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The key deciding measurement is not yet held."
+    ],
+    "correct": false,
+    "true_label": "No \u2014 observe",
+    "human_correct": true
+  },
+  {
+    "case_id": "clinic-10",
+    "domain": "clinic",
+    "question": "Is this chest pain cardiac in origin?",
+    "candidate": "Yes \u2014 cardiac",
+    "p_correct": 0.79,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "clinic evidence 1: supports the candidate.",
+        "decisiveness": 0.5,
+        "cost": 12.26,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "clinic evidence 2: supports the candidate.",
+        "decisiveness": 0.47,
+        "cost": 6.39,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "clinic evidence 3: supports an alternative.",
+        "decisiveness": 0.51,
+        "cost": 7.11,
+        "supports": "alt-0",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "g2",
+        "text": "A held measurement argues against the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "No \u2014 non-cardiac",
+        "contradicts": true
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 non-cardiac",
+        "support": 2
+      },
+      {
+        "label": "alt-1",
+        "support": 0
+      }
+    ],
+    "conflicts": [
+      "One held fact contradicts the candidate."
+    ],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": false,
+    "true_label": "No \u2014 non-cardiac",
+    "human_correct": true
+  },
+  {
+    "case_id": "clinic-11",
+    "domain": "clinic",
+    "question": "Does this rash indicate a drug allergy?",
+    "candidate": "Yes \u2014 drug allergy",
+    "p_correct": 0.68,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "clinic evidence 1: supports an alternative.",
+        "decisiveness": 0.37,
+        "cost": 10.24,
+        "supports": "alt-0",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "clinic evidence 2: supports the candidate.",
+        "decisiveness": 0.32,
+        "cost": 6.83,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "clinic evidence 3: supports the candidate.",
+        "decisiveness": 0.5,
+        "cost": 6.72,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e4",
+        "text": "clinic evidence 4: supports the candidate.",
+        "decisiveness": 0.46,
+        "cost": 10.56,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e5",
+        "text": "clinic evidence 5: supports the candidate.",
+        "decisiveness": 0.36,
+        "cost": 10.55,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "g2",
+        "text": "A held measurement argues against the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "No \u2014 viral rash",
+        "contradicts": true
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 viral rash",
+        "support": 0
+      }
+    ],
+    "conflicts": [
+      "One held fact contradicts the candidate."
+    ],
+    "missing": [
+      "The key deciding measurement is not yet held."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "clinic-12",
+    "domain": "clinic",
+    "question": "Is this chest pain cardiac in origin?",
+    "candidate": "Yes \u2014 cardiac",
+    "p_correct": 0.98,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "clinic evidence 1: supports the candidate.",
+        "decisiveness": 0.37,
+        "cost": 9.78,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "clinic evidence 2: supports an alternative.",
+        "decisiveness": 0.56,
+        "cost": 13.93,
+        "supports": "alt-1",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "clinic evidence 3: supports the candidate.",
+        "decisiveness": 0.32,
+        "cost": 9.17,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e4",
+        "text": "clinic evidence 4: supports the candidate.",
+        "decisiveness": 0.26,
+        "cost": 11.71,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 non-cardiac",
+        "support": 0
+      },
+      {
+        "label": "alt-1",
+        "support": 0
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "clinic-13",
+    "domain": "clinic",
+    "question": "Does this rash indicate a drug allergy?",
+    "candidate": "Yes \u2014 drug allergy",
+    "p_correct": 0.91,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "clinic evidence 1: supports the candidate.",
+        "decisiveness": 0.15,
+        "cost": 13.85,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "clinic evidence 2: supports the candidate.",
+        "decisiveness": 0.43,
+        "cost": 7.24,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "clinic evidence 3: supports the candidate.",
+        "decisiveness": 0.6,
+        "cost": 9.04,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "g2",
+        "text": "A held measurement argues against the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "No \u2014 viral rash",
+        "contradicts": true
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 viral rash",
+        "support": 0
+      },
+      {
+        "label": "alt-1",
+        "support": 1
+      }
+    ],
+    "conflicts": [
+      "A second held fact weakens the candidate."
+    ],
+    "missing": [
+      "The key deciding measurement is not yet held."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "clinic-14",
+    "domain": "clinic",
+    "question": "Does this patient need urgent referral for suspected sepsis?",
+    "candidate": "Yes \u2014 urgent referral",
+    "p_correct": 0.57,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "clinic evidence 1: supports an alternative.",
+        "decisiveness": 0.59,
+        "cost": 6.05,
+        "supports": "alt-0",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "clinic evidence 2: supports the candidate.",
+        "decisiveness": 0.12,
+        "cost": 12.79,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 observe",
+        "support": 2
+      },
+      {
+        "label": "alt-1",
+        "support": 0
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The key deciding measurement is not yet held."
+    ],
+    "correct": false,
+    "true_label": "No \u2014 observe",
+    "human_correct": true
+  },
+  {
+    "case_id": "clinic-15",
+    "domain": "clinic",
+    "question": "Should this patient start anticoagulation today?",
+    "candidate": "Yes \u2014 start today",
+    "p_correct": 0.8,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "clinic evidence 1: supports the candidate.",
+        "decisiveness": 0.5,
+        "cost": 6.83,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "clinic evidence 2: supports an alternative.",
+        "decisiveness": 0.57,
+        "cost": 11.34,
+        "supports": "alt-1",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "g2",
+        "text": "A held measurement argues against the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "No \u2014 wait for labs",
+        "contradicts": true
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 wait for labs",
+        "support": 0
+      },
+      {
+        "label": "alt-1",
+        "support": 0
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "clinic-16",
+    "domain": "clinic",
+    "question": "Is this chest pain cardiac in origin?",
+    "candidate": "Yes \u2014 cardiac",
+    "p_correct": 0.92,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "clinic evidence 1: supports an alternative.",
+        "decisiveness": 0.13,
+        "cost": 7.02,
+        "supports": "alt-1",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "clinic evidence 2: supports the candidate.",
+        "decisiveness": 0.25,
+        "cost": 12.59,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "g2",
+        "text": "A held measurement argues against the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "No \u2014 non-cardiac",
+        "contradicts": true
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 non-cardiac",
+        "support": 1
+      },
+      {
+        "label": "alt-1",
+        "support": 0
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "clinic-17",
+    "domain": "clinic",
+    "question": "Is this chest pain cardiac in origin?",
+    "candidate": "Yes \u2014 cardiac",
+    "p_correct": 0.9,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "clinic evidence 1: supports the candidate.",
+        "decisiveness": 0.51,
+        "cost": 9.32,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "clinic evidence 2: supports the candidate.",
+        "decisiveness": 0.52,
+        "cost": 8.93,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "clinic evidence 3: supports the candidate.",
+        "decisiveness": 0.44,
+        "cost": 14.82,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e4",
+        "text": "clinic evidence 4: supports the candidate.",
+        "decisiveness": 0.52,
+        "cost": 12.07,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e5",
+        "text": "clinic evidence 5: supports the candidate.",
+        "decisiveness": 0.3,
+        "cost": 8.48,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "g2",
+        "text": "A held measurement argues against the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "No \u2014 non-cardiac",
+        "contradicts": true
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 non-cardiac",
+        "support": 0
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "clinic-18",
+    "domain": "clinic",
+    "question": "Should this patient start anticoagulation today?",
+    "candidate": "Yes \u2014 start today",
+    "p_correct": 0.93,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "clinic evidence 1: supports the candidate.",
+        "decisiveness": 0.12,
+        "cost": 6.85,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "clinic evidence 2: supports the candidate.",
+        "decisiveness": 0.1,
+        "cost": 8.64,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "clinic evidence 3: supports the candidate.",
+        "decisiveness": 0.59,
+        "cost": 8.24,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "g2",
+        "text": "A held measurement argues against the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "No \u2014 wait for labs",
+        "contradicts": true
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 wait for labs",
+        "support": 1
+      }
+    ],
+    "conflicts": [
+      "One held fact contradicts the candidate."
+    ],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "clinic-19",
+    "domain": "clinic",
+    "question": "Does this patient need urgent referral for suspected sepsis?",
+    "candidate": "Yes \u2014 urgent referral",
+    "p_correct": 0.92,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "clinic evidence 1: supports an alternative.",
+        "decisiveness": 0.3,
+        "cost": 5.42,
+        "supports": "alt-0",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "clinic evidence 2: supports the candidate.",
+        "decisiveness": 0.25,
+        "cost": 7.33,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "clinic evidence 3: supports the candidate.",
+        "decisiveness": 0.36,
+        "cost": 12.51,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e4",
+        "text": "clinic evidence 4: supports the candidate.",
+        "decisiveness": 0.46,
+        "cost": 13.79,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "g2",
+        "text": "A held measurement argues against the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "No \u2014 observe",
+        "contradicts": true
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 observe",
+        "support": 1
+      },
+      {
+        "label": "alt-1",
+        "support": 1
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "clinic-20",
+    "domain": "clinic",
+    "question": "Is this chest pain cardiac in origin?",
+    "candidate": "Yes \u2014 cardiac",
+    "p_correct": 0.96,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "clinic evidence 1: supports an alternative.",
+        "decisiveness": 0.14,
+        "cost": 5.42,
+        "supports": "alt-0",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "clinic evidence 2: supports the candidate.",
+        "decisiveness": 0.58,
+        "cost": 8.77,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 non-cardiac",
+        "support": 0
+      },
+      {
+        "label": "alt-1",
+        "support": 0
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "research-01",
+    "domain": "research",
+    "question": "Does this paper claim a state-of-the-art result on ImageNet?",
+    "candidate": "Yes \u2014 SOTA on ImageNet",
+    "p_correct": 0.95,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "research evidence 1: supports the candidate.",
+        "decisiveness": 0.14,
+        "cost": 2.06,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "research evidence 2: supports the candidate.",
+        "decisiveness": 0.2,
+        "cost": 3.96,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "research evidence 3: supports an alternative.",
+        "decisiveness": 0.52,
+        "cost": 1.31,
+        "supports": "alt-1",
+        "contradicts": false
+      },
+      {
+        "item_id": "e4",
+        "text": "research evidence 4: supports an alternative.",
+        "decisiveness": 0.48,
+        "cost": 3.47,
+        "supports": "alt-1",
+        "contradicts": false
+      },
+      {
+        "item_id": "e5",
+        "text": "research evidence 5: supports the candidate.",
+        "decisiveness": 0.14,
+        "cost": 1.59,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "g2",
+        "text": "A held measurement argues against the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "No \u2014 SOTA on CIFAR only",
+        "contradicts": true
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 SOTA on CIFAR only",
+        "support": 1
+      },
+      {
+        "label": "alt-1",
+        "support": 0
+      }
+    ],
+    "conflicts": [
+      "One held fact contradicts the candidate."
+    ],
+    "missing": [
+      "The key deciding measurement is not yet held."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "research-02",
+    "domain": "research",
+    "question": "Is the dataset publicly available?",
+    "candidate": "Yes \u2014 public",
+    "p_correct": 0.93,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "research evidence 1: supports the candidate.",
+        "decisiveness": 0.16,
+        "cost": 4.57,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "research evidence 2: supports the candidate.",
+        "decisiveness": 0.59,
+        "cost": 4.75,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "research evidence 3: supports the candidate.",
+        "decisiveness": 0.33,
+        "cost": 4.28,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e4",
+        "text": "research evidence 4: supports an alternative.",
+        "decisiveness": 0.6,
+        "cost": 2.55,
+        "supports": "alt-1",
+        "contradicts": false
+      },
+      {
+        "item_id": "e5",
+        "text": "research evidence 5: supports an alternative.",
+        "decisiveness": 0.14,
+        "cost": 1.36,
+        "supports": "alt-0",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 on request only",
+        "support": 1
+      },
+      {
+        "label": "alt-1",
+        "support": 0
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "research-03",
+    "domain": "research",
+    "question": "Is the proposed method a variant of LoRA?",
+    "candidate": "Yes \u2014 LoRA variant",
+    "p_correct": 0.88,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "research evidence 1: supports an alternative.",
+        "decisiveness": 0.3,
+        "cost": 3.91,
+        "supports": "alt-1",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "research evidence 2: supports the candidate.",
+        "decisiveness": 0.29,
+        "cost": 1.48,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 full fine-tuning",
+        "support": 0
+      },
+      {
+        "label": "alt-1",
+        "support": 1
+      }
+    ],
+    "conflicts": [
+      "A second held fact weakens the candidate."
+    ],
+    "missing": [
+      "The key deciding measurement is not yet held."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "research-04",
+    "domain": "research",
+    "question": "Is the dataset publicly available?",
+    "candidate": "Yes \u2014 public",
+    "p_correct": 0.93,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "research evidence 1: supports an alternative.",
+        "decisiveness": 0.28,
+        "cost": 2.71,
+        "supports": "alt-0",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "research evidence 2: supports the candidate.",
+        "decisiveness": 0.12,
+        "cost": 1.41,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "research evidence 3: supports an alternative.",
+        "decisiveness": 0.42,
+        "cost": 1.6,
+        "supports": "alt-1",
+        "contradicts": false
+      },
+      {
+        "item_id": "e4",
+        "text": "research evidence 4: supports an alternative.",
+        "decisiveness": 0.36,
+        "cost": 1.76,
+        "supports": "alt-1",
+        "contradicts": false
+      },
+      {
+        "item_id": "e5",
+        "text": "research evidence 5: supports the candidate.",
+        "decisiveness": 0.58,
+        "cost": 4.54,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "g2",
+        "text": "A held measurement argues against the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "No \u2014 on request only",
+        "contradicts": true
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 on request only",
+        "support": 0
+      },
+      {
+        "label": "alt-1",
+        "support": 0
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The key deciding measurement is not yet held."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "research-05",
+    "domain": "research",
+    "question": "Is the proposed method a variant of LoRA?",
+    "candidate": "Yes \u2014 LoRA variant",
+    "p_correct": 0.71,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "research evidence 1: supports an alternative.",
+        "decisiveness": 0.24,
+        "cost": 2.02,
+        "supports": "alt-1",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "research evidence 2: supports an alternative.",
+        "decisiveness": 0.3,
+        "cost": 1.95,
+        "supports": "alt-1",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "research evidence 3: supports an alternative.",
+        "decisiveness": 0.16,
+        "cost": 3.57,
+        "supports": "alt-1",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "g2",
+        "text": "A held measurement argues against the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "No \u2014 full fine-tuning",
+        "contradicts": true
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 full fine-tuning",
+        "support": 2
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": false,
+    "true_label": "No \u2014 full fine-tuning",
+    "human_correct": true
+  },
+  {
+    "case_id": "research-06",
+    "domain": "research",
+    "question": "Is the proposed method a variant of LoRA?",
+    "candidate": "Yes \u2014 LoRA variant",
+    "p_correct": 0.94,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "research evidence 1: supports the candidate.",
+        "decisiveness": 0.27,
+        "cost": 1.36,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "research evidence 2: supports the candidate.",
+        "decisiveness": 0.23,
+        "cost": 3.28,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "research evidence 3: supports an alternative.",
+        "decisiveness": 0.29,
+        "cost": 3.98,
+        "supports": "alt-1",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "g2",
+        "text": "A held measurement argues against the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "No \u2014 full fine-tuning",
+        "contradicts": true
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 full fine-tuning",
+        "support": 1
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The key deciding measurement is not yet held."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "research-07",
+    "domain": "research",
+    "question": "Is the proposed method a variant of LoRA?",
+    "candidate": "Yes \u2014 LoRA variant",
+    "p_correct": 0.95,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "research evidence 1: supports the candidate.",
+        "decisiveness": 0.22,
+        "cost": 2.6,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "research evidence 2: supports the candidate.",
+        "decisiveness": 0.58,
+        "cost": 4.39,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "g2",
+        "text": "A held measurement argues against the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "No \u2014 full fine-tuning",
+        "contradicts": true
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 full fine-tuning",
+        "support": 0
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "research-08",
+    "domain": "research",
+    "question": "Is the dataset publicly available?",
+    "candidate": "Yes \u2014 public",
+    "p_correct": 0.58,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "research evidence 1: supports the candidate.",
+        "decisiveness": 0.15,
+        "cost": 1.62,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "research evidence 2: supports an alternative.",
+        "decisiveness": 0.57,
+        "cost": 3.89,
+        "supports": "alt-0",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "research evidence 3: supports an alternative.",
+        "decisiveness": 0.14,
+        "cost": 4.11,
+        "supports": "alt-1",
+        "contradicts": false
+      },
+      {
+        "item_id": "e4",
+        "text": "research evidence 4: supports the candidate.",
+        "decisiveness": 0.16,
+        "cost": 3.28,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e5",
+        "text": "research evidence 5: supports the candidate.",
+        "decisiveness": 0.46,
+        "cost": 4.85,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 on request only",
+        "support": 2
+      },
+      {
+        "label": "alt-1",
+        "support": 1
+      }
+    ],
+    "conflicts": [
+      "One held fact contradicts the candidate.",
+      "A second held fact weakens the candidate."
+    ],
+    "missing": [
+      "The key deciding measurement is not yet held."
+    ],
+    "correct": false,
+    "true_label": "No \u2014 on request only",
+    "human_correct": true
+  },
+  {
+    "case_id": "research-09",
+    "domain": "research",
+    "question": "Does this paper claim a state-of-the-art result on ImageNet?",
+    "candidate": "Yes \u2014 SOTA on ImageNet",
+    "p_correct": 0.74,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "research evidence 1: supports an alternative.",
+        "decisiveness": 0.58,
+        "cost": 3.58,
+        "supports": "alt-1",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "research evidence 2: supports an alternative.",
+        "decisiveness": 0.36,
+        "cost": 3.19,
+        "supports": "alt-1",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "research evidence 3: supports the candidate.",
+        "decisiveness": 0.31,
+        "cost": 3.6,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e4",
+        "text": "research evidence 4: supports the candidate.",
+        "decisiveness": 0.2,
+        "cost": 4.54,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "g2",
+        "text": "A held measurement argues against the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "No \u2014 SOTA on CIFAR only",
+        "contradicts": true
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 SOTA on CIFAR only",
+        "support": 0
+      },
+      {
+        "label": "alt-1",
+        "support": 1
+      }
+    ],
+    "conflicts": [
+      "One held fact contradicts the candidate."
+    ],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "research-10",
+    "domain": "research",
+    "question": "Does this paper claim a state-of-the-art result on ImageNet?",
+    "candidate": "Yes \u2014 SOTA on ImageNet",
+    "p_correct": 0.93,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "research evidence 1: supports the candidate.",
+        "decisiveness": 0.35,
+        "cost": 1.82,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "research evidence 2: supports an alternative.",
+        "decisiveness": 0.48,
+        "cost": 1.78,
+        "supports": "alt-1",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "research evidence 3: supports the candidate.",
+        "decisiveness": 0.23,
+        "cost": 4.56,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e4",
+        "text": "research evidence 4: supports the candidate.",
+        "decisiveness": 0.41,
+        "cost": 3.44,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 SOTA on CIFAR only",
+        "support": 1
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "research-11",
+    "domain": "research",
+    "question": "Does this paper claim a state-of-the-art result on ImageNet?",
+    "candidate": "Yes \u2014 SOTA on ImageNet",
+    "p_correct": 0.89,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "research evidence 1: supports the candidate.",
+        "decisiveness": 0.32,
+        "cost": 3.85,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "research evidence 2: supports the candidate.",
+        "decisiveness": 0.16,
+        "cost": 1.32,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "g2",
+        "text": "A held measurement argues against the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "No \u2014 SOTA on CIFAR only",
+        "contradicts": true
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 SOTA on CIFAR only",
+        "support": 1
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "research-12",
+    "domain": "research",
+    "question": "Is the dataset publicly available?",
+    "candidate": "Yes \u2014 public",
+    "p_correct": 0.98,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "research evidence 1: supports the candidate.",
+        "decisiveness": 0.14,
+        "cost": 1.32,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "research evidence 2: supports an alternative.",
+        "decisiveness": 0.38,
+        "cost": 4.04,
+        "supports": "alt-0",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "research evidence 3: supports an alternative.",
+        "decisiveness": 0.51,
+        "cost": 2.73,
+        "supports": "alt-1",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 on request only",
+        "support": 2
+      }
+    ],
+    "conflicts": [
+      "One held fact contradicts the candidate."
+    ],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": false,
+    "true_label": "No \u2014 on request only",
+    "human_correct": true
+  },
+  {
+    "case_id": "research-13",
+    "domain": "research",
+    "question": "Is the proposed method a variant of LoRA?",
+    "candidate": "Yes \u2014 LoRA variant",
+    "p_correct": 0.94,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "research evidence 1: supports the candidate.",
+        "decisiveness": 0.12,
+        "cost": 1.25,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "research evidence 2: supports an alternative.",
+        "decisiveness": 0.2,
+        "cost": 1.25,
+        "supports": "alt-1",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "research evidence 3: supports the candidate.",
+        "decisiveness": 0.28,
+        "cost": 2.34,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e4",
+        "text": "research evidence 4: supports an alternative.",
+        "decisiveness": 0.23,
+        "cost": 3.87,
+        "supports": "alt-0",
+        "contradicts": false
+      },
+      {
+        "item_id": "e5",
+        "text": "research evidence 5: supports the candidate.",
+        "decisiveness": 0.24,
+        "cost": 1.02,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 full fine-tuning",
+        "support": 0
+      }
+    ],
+    "conflicts": [
+      "One held fact contradicts the candidate."
+    ],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "research-14",
+    "domain": "research",
+    "question": "Is the proposed method a variant of LoRA?",
+    "candidate": "Yes \u2014 LoRA variant",
+    "p_correct": 0.98,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "research evidence 1: supports the candidate.",
+        "decisiveness": 0.5,
+        "cost": 3.95,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "research evidence 2: supports an alternative.",
+        "decisiveness": 0.4,
+        "cost": 2.31,
+        "supports": "alt-0",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "research evidence 3: supports the candidate.",
+        "decisiveness": 0.28,
+        "cost": 4.13,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e4",
+        "text": "research evidence 4: supports the candidate.",
+        "decisiveness": 0.2,
+        "cost": 4.01,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e5",
+        "text": "research evidence 5: supports the candidate.",
+        "decisiveness": 0.13,
+        "cost": 1.14,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 full fine-tuning",
+        "support": 0
+      },
+      {
+        "label": "alt-1",
+        "support": 1
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "research-15",
+    "domain": "research",
+    "question": "Is the proposed method a variant of LoRA?",
+    "candidate": "Yes \u2014 LoRA variant",
+    "p_correct": 0.84,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "research evidence 1: supports the candidate.",
+        "decisiveness": 0.41,
+        "cost": 3.7,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "research evidence 2: supports the candidate.",
+        "decisiveness": 0.52,
+        "cost": 3.66,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "research evidence 3: supports the candidate.",
+        "decisiveness": 0.52,
+        "cost": 2.18,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 full fine-tuning",
+        "support": 1
+      },
+      {
+        "label": "alt-1",
+        "support": 1
+      }
+    ],
+    "conflicts": [
+      "One held fact contradicts the candidate.",
+      "A second held fact weakens the candidate."
+    ],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "research-16",
+    "domain": "research",
+    "question": "Is the dataset publicly available?",
+    "candidate": "Yes \u2014 public",
+    "p_correct": 0.95,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "research evidence 1: supports an alternative.",
+        "decisiveness": 0.42,
+        "cost": 1.4,
+        "supports": "alt-0",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "research evidence 2: supports the candidate.",
+        "decisiveness": 0.12,
+        "cost": 1.02,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "research evidence 3: supports an alternative.",
+        "decisiveness": 0.52,
+        "cost": 4.66,
+        "supports": "alt-0",
+        "contradicts": false
+      },
+      {
+        "item_id": "e4",
+        "text": "research evidence 4: supports the candidate.",
+        "decisiveness": 0.25,
+        "cost": 1.48,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 on request only",
+        "support": 0
+      }
+    ],
+    "conflicts": [
+      "One held fact contradicts the candidate."
+    ],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "research-17",
+    "domain": "research",
+    "question": "Does the study use a randomized controlled trial?",
+    "candidate": "Yes \u2014 RCT",
+    "p_correct": 0.99,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "research evidence 1: supports the candidate.",
+        "decisiveness": 0.27,
+        "cost": 1.18,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "research evidence 2: supports an alternative.",
+        "decisiveness": 0.4,
+        "cost": 3.61,
+        "supports": "alt-0",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "research evidence 3: supports the candidate.",
+        "decisiveness": 0.11,
+        "cost": 2.31,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "g2",
+        "text": "A held measurement argues against the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "No \u2014 observational",
+        "contradicts": true
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 observational",
+        "support": 0
+      },
+      {
+        "label": "alt-1",
+        "support": 1
+      }
+    ],
+    "conflicts": [
+      "One held fact contradicts the candidate."
+    ],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "research-18",
+    "domain": "research",
+    "question": "Does this paper claim a state-of-the-art result on ImageNet?",
+    "candidate": "Yes \u2014 SOTA on ImageNet",
+    "p_correct": 0.96,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "research evidence 1: supports the candidate.",
+        "decisiveness": 0.24,
+        "cost": 4.95,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "research evidence 2: supports the candidate.",
+        "decisiveness": 0.31,
+        "cost": 1.21,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "research evidence 3: supports the candidate.",
+        "decisiveness": 0.54,
+        "cost": 2.66,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 SOTA on CIFAR only",
+        "support": 1
+      }
+    ],
+    "conflicts": [
+      "One held fact contradicts the candidate."
+    ],
+    "missing": [
+      "The key deciding measurement is not yet held."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "research-19",
+    "domain": "research",
+    "question": "Does the study use a randomized controlled trial?",
+    "candidate": "Yes \u2014 RCT",
+    "p_correct": 0.52,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "research evidence 1: supports an alternative.",
+        "decisiveness": 0.11,
+        "cost": 3.21,
+        "supports": "alt-0",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "research evidence 2: supports the candidate.",
+        "decisiveness": 0.55,
+        "cost": 1.36,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "research evidence 3: supports the candidate.",
+        "decisiveness": 0.29,
+        "cost": 3.02,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e4",
+        "text": "research evidence 4: supports the candidate.",
+        "decisiveness": 0.24,
+        "cost": 3.08,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e5",
+        "text": "research evidence 5: supports an alternative.",
+        "decisiveness": 0.29,
+        "cost": 4.01,
+        "supports": "alt-0",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "g2",
+        "text": "A held measurement argues against the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "No \u2014 observational",
+        "contradicts": true
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 observational",
+        "support": 1
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "research-20",
+    "domain": "research",
+    "question": "Is the proposed method a variant of LoRA?",
+    "candidate": "Yes \u2014 LoRA variant",
+    "p_correct": 0.93,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "research evidence 1: supports the candidate.",
+        "decisiveness": 0.41,
+        "cost": 1.78,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "research evidence 2: supports the candidate.",
+        "decisiveness": 0.38,
+        "cost": 1.17,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "research evidence 3: supports an alternative.",
+        "decisiveness": 0.29,
+        "cost": 1.49,
+        "supports": "alt-0",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "g2",
+        "text": "A held measurement argues against the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "No \u2014 full fine-tuning",
+        "contradicts": true
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 full fine-tuning",
+        "support": 0
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "ops-01",
+    "domain": "ops",
+    "question": "Is the downtown venue available on Saturday?",
+    "candidate": "Yes \u2014 available Saturday",
+    "p_correct": 0.62,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "ops evidence 1: supports the candidate.",
+        "decisiveness": 0.22,
+        "cost": 1.08,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "ops evidence 2: supports the candidate.",
+        "decisiveness": 0.35,
+        "cost": 0.77,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "ops evidence 3: supports the candidate.",
+        "decisiveness": 0.59,
+        "cost": 1.2,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e4",
+        "text": "ops evidence 4: supports the candidate.",
+        "decisiveness": 0.41,
+        "cost": 1.73,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e5",
+        "text": "ops evidence 5: supports an alternative.",
+        "decisiveness": 0.3,
+        "cost": 0.6,
+        "supports": "alt-1",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "g2",
+        "text": "A held measurement argues against the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "No \u2014 booked Saturday",
+        "contradicts": true
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 booked Saturday",
+        "support": 1
+      },
+      {
+        "label": "alt-1",
+        "support": 1
+      }
+    ],
+    "conflicts": [
+      "One held fact contradicts the candidate."
+    ],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "ops-02",
+    "domain": "ops",
+    "question": "Is the 09:00 flight the cheapest option for Friday?",
+    "candidate": "Yes \u2014 cheapest",
+    "p_correct": 0.65,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "ops evidence 1: supports an alternative.",
+        "decisiveness": 0.43,
+        "cost": 1.68,
+        "supports": "alt-1",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "ops evidence 2: supports the candidate.",
+        "decisiveness": 0.13,
+        "cost": 1.42,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "g2",
+        "text": "A held measurement argues against the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "No \u2014 14:00 is cheaper",
+        "contradicts": true
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 14:00 is cheaper",
+        "support": 2
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The key deciding measurement is not yet held."
+    ],
+    "correct": false,
+    "true_label": "No \u2014 14:00 is cheaper",
+    "human_correct": true
+  },
+  {
+    "case_id": "ops-03",
+    "domain": "ops",
+    "question": "Is the 09:00 flight the cheapest option for Friday?",
+    "candidate": "Yes \u2014 cheapest",
+    "p_correct": 0.66,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "ops evidence 1: supports an alternative.",
+        "decisiveness": 0.18,
+        "cost": 1.84,
+        "supports": "alt-1",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "ops evidence 2: supports the candidate.",
+        "decisiveness": 0.51,
+        "cost": 0.72,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "ops evidence 3: supports an alternative.",
+        "decisiveness": 0.2,
+        "cost": 0.89,
+        "supports": "alt-1",
+        "contradicts": false
+      },
+      {
+        "item_id": "e4",
+        "text": "ops evidence 4: supports an alternative.",
+        "decisiveness": 0.29,
+        "cost": 0.8,
+        "supports": "alt-1",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 14:00 is cheaper",
+        "support": 2
+      },
+      {
+        "label": "alt-1",
+        "support": 0
+      }
+    ],
+    "conflicts": [
+      "One held fact contradicts the candidate."
+    ],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": false,
+    "true_label": "No \u2014 14:00 is cheaper",
+    "human_correct": true
+  },
+  {
+    "case_id": "ops-04",
+    "domain": "ops",
+    "question": "Is the downtown venue available on Saturday?",
+    "candidate": "Yes \u2014 available Saturday",
+    "p_correct": 0.85,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "ops evidence 1: supports the candidate.",
+        "decisiveness": 0.39,
+        "cost": 1.82,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "ops evidence 2: supports the candidate.",
+        "decisiveness": 0.6,
+        "cost": 1.44,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "ops evidence 3: supports the candidate.",
+        "decisiveness": 0.5,
+        "cost": 0.9,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e4",
+        "text": "ops evidence 4: supports an alternative.",
+        "decisiveness": 0.28,
+        "cost": 1.65,
+        "supports": "alt-0",
+        "contradicts": false
+      },
+      {
+        "item_id": "e5",
+        "text": "ops evidence 5: supports the candidate.",
+        "decisiveness": 0.19,
+        "cost": 1.62,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 booked Saturday",
+        "support": 1
+      }
+    ],
+    "conflicts": [
+      "One held fact contradicts the candidate."
+    ],
+    "missing": [
+      "The key deciding measurement is not yet held."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "ops-05",
+    "domain": "ops",
+    "question": "Is the 09:00 flight the cheapest option for Friday?",
+    "candidate": "Yes \u2014 cheapest",
+    "p_correct": 0.93,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "ops evidence 1: supports the candidate.",
+        "decisiveness": 0.41,
+        "cost": 1.15,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "ops evidence 2: supports the candidate.",
+        "decisiveness": 0.55,
+        "cost": 0.7,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "ops evidence 3: supports the candidate.",
+        "decisiveness": 0.43,
+        "cost": 0.53,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "g2",
+        "text": "A held measurement argues against the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "No \u2014 14:00 is cheaper",
+        "contradicts": true
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 14:00 is cheaper",
+        "support": 1
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "ops-06",
+    "domain": "ops",
+    "question": "Does the hotel offer free cancellation?",
+    "candidate": "Yes \u2014 free cancellation",
+    "p_correct": 0.57,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "ops evidence 1: supports the candidate.",
+        "decisiveness": 0.5,
+        "cost": 1.56,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "ops evidence 2: supports an alternative.",
+        "decisiveness": 0.42,
+        "cost": 1.81,
+        "supports": "alt-0",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "ops evidence 3: supports an alternative.",
+        "decisiveness": 0.51,
+        "cost": 1.95,
+        "supports": "alt-1",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 cancellation fee applies",
+        "support": 2
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The key deciding measurement is not yet held."
+    ],
+    "correct": false,
+    "true_label": "No \u2014 cancellation fee applies",
+    "human_correct": true
+  },
+  {
+    "case_id": "ops-07",
+    "domain": "ops",
+    "question": "Is the 09:00 flight the cheapest option for Friday?",
+    "candidate": "Yes \u2014 cheapest",
+    "p_correct": 0.97,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "ops evidence 1: supports the candidate.",
+        "decisiveness": 0.11,
+        "cost": 0.78,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "ops evidence 2: supports the candidate.",
+        "decisiveness": 0.56,
+        "cost": 0.66,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 14:00 is cheaper",
+        "support": 0
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The key deciding measurement is not yet held."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "ops-08",
+    "domain": "ops",
+    "question": "Is the 09:00 flight the cheapest option for Friday?",
+    "candidate": "Yes \u2014 cheapest",
+    "p_correct": 0.95,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "ops evidence 1: supports the candidate.",
+        "decisiveness": 0.1,
+        "cost": 1.77,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "ops evidence 2: supports the candidate.",
+        "decisiveness": 0.33,
+        "cost": 1.61,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "ops evidence 3: supports the candidate.",
+        "decisiveness": 0.21,
+        "cost": 0.66,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e4",
+        "text": "ops evidence 4: supports the candidate.",
+        "decisiveness": 0.12,
+        "cost": 1.0,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e5",
+        "text": "ops evidence 5: supports the candidate.",
+        "decisiveness": 0.45,
+        "cost": 1.77,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 14:00 is cheaper",
+        "support": 1
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The key deciding measurement is not yet held."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": false
+  },
+  {
+    "case_id": "ops-09",
+    "domain": "ops",
+    "question": "Is the 09:00 flight the cheapest option for Friday?",
+    "candidate": "Yes \u2014 cheapest",
+    "p_correct": 0.89,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "ops evidence 1: supports the candidate.",
+        "decisiveness": 0.55,
+        "cost": 1.76,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "ops evidence 2: supports the candidate.",
+        "decisiveness": 0.18,
+        "cost": 1.87,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 14:00 is cheaper",
+        "support": 2
+      }
+    ],
+    "conflicts": [
+      "One held fact contradicts the candidate.",
+      "A second held fact weakens the candidate."
+    ],
+    "missing": [
+      "The key deciding measurement is not yet held."
+    ],
+    "correct": false,
+    "true_label": "No \u2014 14:00 is cheaper",
+    "human_correct": true
+  },
+  {
+    "case_id": "ops-10",
+    "domain": "ops",
+    "question": "Does the supplier deliver within 48 hours?",
+    "candidate": "Yes \u2014 delivers in 48h",
+    "p_correct": 0.96,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "ops evidence 1: supports an alternative.",
+        "decisiveness": 0.53,
+        "cost": 1.16,
+        "supports": "alt-0",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "ops evidence 2: supports an alternative.",
+        "decisiveness": 0.49,
+        "cost": 1.09,
+        "supports": "alt-1",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "ops evidence 3: supports an alternative.",
+        "decisiveness": 0.17,
+        "cost": 0.54,
+        "supports": "alt-0",
+        "contradicts": false
+      },
+      {
+        "item_id": "e4",
+        "text": "ops evidence 4: supports the candidate.",
+        "decisiveness": 0.56,
+        "cost": 1.02,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e5",
+        "text": "ops evidence 5: supports the candidate.",
+        "decisiveness": 0.11,
+        "cost": 0.56,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 72h delivery",
+        "support": 2
+      }
+    ],
+    "conflicts": [
+      "A second held fact weakens the candidate."
+    ],
+    "missing": [
+      "The key deciding measurement is not yet held."
+    ],
+    "correct": false,
+    "true_label": "No \u2014 72h delivery",
+    "human_correct": true
+  },
+  {
+    "case_id": "ops-11",
+    "domain": "ops",
+    "question": "Is the 09:00 flight the cheapest option for Friday?",
+    "candidate": "Yes \u2014 cheapest",
+    "p_correct": 0.97,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "ops evidence 1: supports the candidate.",
+        "decisiveness": 0.2,
+        "cost": 0.67,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "ops evidence 2: supports the candidate.",
+        "decisiveness": 0.52,
+        "cost": 1.72,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "ops evidence 3: supports the candidate.",
+        "decisiveness": 0.51,
+        "cost": 1.45,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e4",
+        "text": "ops evidence 4: supports the candidate.",
+        "decisiveness": 0.15,
+        "cost": 0.65,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e5",
+        "text": "ops evidence 5: supports an alternative.",
+        "decisiveness": 0.25,
+        "cost": 1.0,
+        "supports": "alt-0",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "g2",
+        "text": "A held measurement argues against the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "No \u2014 14:00 is cheaper",
+        "contradicts": true
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 14:00 is cheaper",
+        "support": 0
+      },
+      {
+        "label": "alt-1",
+        "support": 1
+      }
+    ],
+    "conflicts": [
+      "One held fact contradicts the candidate."
+    ],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "ops-12",
+    "domain": "ops",
+    "question": "Is the 09:00 flight the cheapest option for Friday?",
+    "candidate": "Yes \u2014 cheapest",
+    "p_correct": 0.95,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "ops evidence 1: supports the candidate.",
+        "decisiveness": 0.36,
+        "cost": 0.65,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "ops evidence 2: supports the candidate.",
+        "decisiveness": 0.12,
+        "cost": 1.35,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "ops evidence 3: supports the candidate.",
+        "decisiveness": 0.51,
+        "cost": 1.36,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e4",
+        "text": "ops evidence 4: supports the candidate.",
+        "decisiveness": 0.32,
+        "cost": 1.29,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e5",
+        "text": "ops evidence 5: supports the candidate.",
+        "decisiveness": 0.48,
+        "cost": 0.58,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 14:00 is cheaper",
+        "support": 1
+      },
+      {
+        "label": "alt-1",
+        "support": 0
+      }
+    ],
+    "conflicts": [
+      "A second held fact weakens the candidate."
+    ],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "ops-13",
+    "domain": "ops",
+    "question": "Is the downtown venue available on Saturday?",
+    "candidate": "Yes \u2014 available Saturday",
+    "p_correct": 0.92,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "ops evidence 1: supports an alternative.",
+        "decisiveness": 0.35,
+        "cost": 0.66,
+        "supports": "alt-0",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "ops evidence 2: supports an alternative.",
+        "decisiveness": 0.35,
+        "cost": 1.99,
+        "supports": "alt-0",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "ops evidence 3: supports an alternative.",
+        "decisiveness": 0.41,
+        "cost": 1.03,
+        "supports": "alt-0",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 booked Saturday",
+        "support": 2
+      },
+      {
+        "label": "alt-1",
+        "support": 1
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The key deciding measurement is not yet held."
+    ],
+    "correct": false,
+    "true_label": "No \u2014 booked Saturday",
+    "human_correct": true
+  },
+  {
+    "case_id": "ops-14",
+    "domain": "ops",
+    "question": "Does the hotel offer free cancellation?",
+    "candidate": "Yes \u2014 free cancellation",
+    "p_correct": 0.79,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "ops evidence 1: supports an alternative.",
+        "decisiveness": 0.57,
+        "cost": 0.69,
+        "supports": "alt-0",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "ops evidence 2: supports the candidate.",
+        "decisiveness": 0.44,
+        "cost": 1.41,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "ops evidence 3: supports the candidate.",
+        "decisiveness": 0.39,
+        "cost": 1.28,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e4",
+        "text": "ops evidence 4: supports an alternative.",
+        "decisiveness": 0.43,
+        "cost": 1.61,
+        "supports": "alt-1",
+        "contradicts": false
+      },
+      {
+        "item_id": "e5",
+        "text": "ops evidence 5: supports the candidate.",
+        "decisiveness": 0.32,
+        "cost": 1.66,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "g2",
+        "text": "A held measurement argues against the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "No \u2014 cancellation fee applies",
+        "contradicts": true
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 cancellation fee applies",
+        "support": 0
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The key deciding measurement is not yet held."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "ops-15",
+    "domain": "ops",
+    "question": "Does the hotel offer free cancellation?",
+    "candidate": "Yes \u2014 free cancellation",
+    "p_correct": 0.97,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "ops evidence 1: supports the candidate.",
+        "decisiveness": 0.4,
+        "cost": 1.02,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "ops evidence 2: supports the candidate.",
+        "decisiveness": 0.58,
+        "cost": 0.89,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "ops evidence 3: supports an alternative.",
+        "decisiveness": 0.18,
+        "cost": 1.49,
+        "supports": "alt-0",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "g2",
+        "text": "A held measurement argues against the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "No \u2014 cancellation fee applies",
+        "contradicts": true
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 cancellation fee applies",
+        "support": 1
+      }
+    ],
+    "conflicts": [
+      "One held fact contradicts the candidate."
+    ],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "ops-16",
+    "domain": "ops",
+    "question": "Does the supplier deliver within 48 hours?",
+    "candidate": "Yes \u2014 delivers in 48h",
+    "p_correct": 0.68,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "ops evidence 1: supports the candidate.",
+        "decisiveness": 0.3,
+        "cost": 1.69,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "ops evidence 2: supports the candidate.",
+        "decisiveness": 0.35,
+        "cost": 1.45,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "ops evidence 3: supports the candidate.",
+        "decisiveness": 0.17,
+        "cost": 1.41,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e4",
+        "text": "ops evidence 4: supports the candidate.",
+        "decisiveness": 0.47,
+        "cost": 1.86,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e5",
+        "text": "ops evidence 5: supports the candidate.",
+        "decisiveness": 0.39,
+        "cost": 1.62,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 72h delivery",
+        "support": 0
+      },
+      {
+        "label": "alt-1",
+        "support": 0
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "ops-17",
+    "domain": "ops",
+    "question": "Does the hotel offer free cancellation?",
+    "candidate": "Yes \u2014 free cancellation",
+    "p_correct": 0.58,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "ops evidence 1: supports an alternative.",
+        "decisiveness": 0.33,
+        "cost": 1.43,
+        "supports": "alt-1",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "ops evidence 2: supports an alternative.",
+        "decisiveness": 0.55,
+        "cost": 0.99,
+        "supports": "alt-0",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "ops evidence 3: supports the candidate.",
+        "decisiveness": 0.52,
+        "cost": 1.86,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e4",
+        "text": "ops evidence 4: supports the candidate.",
+        "decisiveness": 0.23,
+        "cost": 0.83,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 cancellation fee applies",
+        "support": 2
+      }
+    ],
+    "conflicts": [
+      "One held fact contradicts the candidate."
+    ],
+    "missing": [
+      "The key deciding measurement is not yet held."
+    ],
+    "correct": false,
+    "true_label": "No \u2014 cancellation fee applies",
+    "human_correct": true
+  },
+  {
+    "case_id": "ops-18",
+    "domain": "ops",
+    "question": "Is the downtown venue available on Saturday?",
+    "candidate": "Yes \u2014 available Saturday",
+    "p_correct": 0.83,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "ops evidence 1: supports the candidate.",
+        "decisiveness": 0.33,
+        "cost": 1.99,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "ops evidence 2: supports the candidate.",
+        "decisiveness": 0.36,
+        "cost": 1.9,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "ops evidence 3: supports the candidate.",
+        "decisiveness": 0.41,
+        "cost": 1.46,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e4",
+        "text": "ops evidence 4: supports the candidate.",
+        "decisiveness": 0.29,
+        "cost": 0.59,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e5",
+        "text": "ops evidence 5: supports the candidate.",
+        "decisiveness": 0.56,
+        "cost": 1.44,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "g2",
+        "text": "A held measurement argues against the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "No \u2014 booked Saturday",
+        "contradicts": true
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 booked Saturday",
+        "support": 1
+      },
+      {
+        "label": "alt-1",
+        "support": 0
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The key deciding measurement is not yet held."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "ops-19",
+    "domain": "ops",
+    "question": "Does the hotel offer free cancellation?",
+    "candidate": "Yes \u2014 free cancellation",
+    "p_correct": 0.94,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "ops evidence 1: supports an alternative.",
+        "decisiveness": 0.33,
+        "cost": 1.34,
+        "supports": "alt-0",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "ops evidence 2: supports the candidate.",
+        "decisiveness": 0.58,
+        "cost": 1.03,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 cancellation fee applies",
+        "support": 1
+      },
+      {
+        "label": "alt-1",
+        "support": 1
+      }
+    ],
+    "conflicts": [],
+    "missing": [
+      "The key deciding measurement is not yet held.",
+      "A corroborating source is not yet checked."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  },
+  {
+    "case_id": "ops-20",
+    "domain": "ops",
+    "question": "Does the supplier deliver within 48 hours?",
+    "candidate": "Yes \u2014 delivers in 48h",
+    "p_correct": 0.84,
+    "evidence": [
+      {
+        "item_id": "e1",
+        "text": "ops evidence 1: supports the candidate.",
+        "decisiveness": 0.5,
+        "cost": 1.7,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e2",
+        "text": "ops evidence 2: supports the candidate.",
+        "decisiveness": 0.43,
+        "cost": 0.98,
+        "supports": "candidate",
+        "contradicts": false
+      },
+      {
+        "item_id": "e3",
+        "text": "ops evidence 3: supports the candidate.",
+        "decisiveness": 0.41,
+        "cost": 0.63,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "gathered": [
+      {
+        "item_id": "g1",
+        "text": "Initial observation supports the candidate.",
+        "decisiveness": 0.0,
+        "cost": 0.0,
+        "supports": "candidate",
+        "contradicts": false
+      }
+    ],
+    "alternatives": [
+      {
+        "label": "No \u2014 72h delivery",
+        "support": 0
+      },
+      {
+        "label": "alt-1",
+        "support": 1
+      }
+    ],
+    "conflicts": [
+      "One held fact contradicts the candidate."
+    ],
+    "missing": [
+      "The key deciding measurement is not yet held."
+    ],
+    "correct": true,
+    "true_label": "",
+    "human_correct": true
+  }
+]
